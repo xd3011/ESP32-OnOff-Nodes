@@ -1,0 +1,27 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.flashType": "UART",
+    "idf.portWin": "COM3",
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "array": "c",
+        "*.tcc": "c",
+        "iterator": "c",
+        "algorithm": "c",
+        "initializer_list": "c",
+        "istream": "c",
+        "numeric": "c",
+        "functional": "c",
+        "regex": "c",
+        "tuple": "c",
+        "rtc_io_hal.h": "c",
+        "gpio.h": "c",
+        "cstdlib": "c",
+        "nvs_flash.h": "c",
+        "format": "c",
+        "esp_ble_mesh_local_data_operation_api.h": "c",
+        "esp_ble_mesh_generic_model_api.h": "c",
+        "board.h": "c",
+        "iot_button.h": "c"
+    }
+}

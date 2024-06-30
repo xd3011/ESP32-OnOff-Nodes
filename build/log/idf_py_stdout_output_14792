@@ -1,0 +1,316 @@
+L�&�+
+B��J���� chip revision: v3.0[0m
+[0;32mI�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 25 2024 22:54:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=35204h (217604) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=0004522c vaddr=3ffbdb60 size=0540ch ( 21516) load[0m
+[0;32mI (187) esp_image: segment 2: paddr=0004a640 vaddr=40080000 size=059d8h ( 23000) load[0m
+[0;32mI (196) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=b3f84h (737156) map[0m
+[0;32mI (449) esp_image: segment 4: paddr=00103fac vaddr=400859d8 size=135f8h ( 79352) load[0m
+[0;32mI (493) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (493) boot: Disabling RNG early entropy source...[0m
+[0;32mI (505) cpu_start: Multicore app[0m
+[0;32mI (514) cpu_start: Pro cpu start user code[0m
+[0;32mI (514) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (514) cpu_start: Application information:[0m
+[0;32mI (517) cpu_start: Project name:     onoff_server[0m
+[0;32mI (522) cpu_start: App version:      1[0m
+[0;32mI (526) cpu_start: Compile time:     Mar 28 2024 00:34:37[0m
+[0;32mI (533) cpu_start: ELF file SHA256:  75e87fe69...[0m
+[0;32mI (538) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (543) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (547) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (552) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (557) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (564) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (570) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (576) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (583) heap_init: At 3FFCAD08 len 000152F8 (84 KiB): DRAM[0m
+[0;32mI (589) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (595) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (602) heap_init: At 40098FD0 len 00007030 (28 KiB): IRAM[0m
+[0;32mI (609) spi_flash: detected chip: generic[0m
+[0;32mI (612) spi_flash: flash io: dio[0m
+[0;33mW (616) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (630) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (635) main_task: Started on CPU0[0m
+[0;32mI (645) main_task: Calling app_main()[0m
+[0;32mI (645) EXAMPLE: Initializing...[0m
+[0;32mI (645) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (655) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (665) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (725) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (725) BTDM_INIT: Bluetooth MAC: 30:c6:f7:29:2e:ca[0m
+[0;32mI (725) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+Bluetooth Mesh v1.1 commit: [154b4fcc98]
+[0;32mI (1215) EXAMPLE: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1215) EXAMPLE: BLE Mesh Node initialized[0m
+[0;32mI (1215) BOARD: pin: 0x1a[0m
+[0;32mI (1225) main_task: Returned from app_main()[0m
+[0;32mI (1235) EXAMPLE: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;32mI (473205) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (473565) BLE_MESH: No Health Server context provided[0m
+[0;33mW (505705) BLE_MESH: No Health Server context provided[0m
+[0;32mI (505735) EXAMPLE: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (505735) EXAMPLE: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (505735) EXAMPLE: net_idx: 0x0000, addr: 0x000c[0m
+[0;32mI (505745) EXAMPLE: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (505745) BOARD: pin: 0x1a[0m
+[0;33mW (505785) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (522305) EXAMPLE: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (522305) EXAMPLE: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (522305) AppKey: 0f bb ee 2a f9 1d bd 9f 67 a8 e5 3a 76 73 f5 b1 [0m
+[0;32mI (530365) EXAMPLE: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (530365) EXAMPLE: elem_addr 0x000c, app_idx 0x0000, cid 0xffff, mod_id 0x1000[0m
+[0;32mI (689875) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (689885) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (689885) EXAMPLE: onoff 0x00[0m
+[0;32mI (689885) BOARD: pin: 0x19[0m
+[0;33mW (689895) BOARD: led red is already off[0m
+[0;32mI (697765) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (697765) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (697765) EXAMPLE: onoff 0x01[0m
+[0;32mI (697765) BOARD: pin: 0x19[0m
+[0;32mI (704215) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (704225) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (704225) EXAMPLE: onoff 0x00[0m
+[0;32mI (704225) BOARD: pin: 0x19[0m
+[0;32mI (723295) EXAMPLE: event 0x00, opcode 0x8203, src 0x0001, dst 0x000c[0m
+[0;32mI (723305) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (723305) EXAMPLE: onoff 0x01[0m
+[0;32mI (723305) EXAMPLE: count: 0x03, addr: 0x000c, check: 0x000c[0m
+[0;32mI (723315) BOARD: pin: 0x19[0m
+[0;32mI (723315) EXAMPLE: count: 0x03, addr: 0x000c, check: 0x000c[0m
+[0;32mI (723325) EXAMPLE: count: 0x03, addr: 0x000c, check: 0x000c[0m
+[0;32mI (727975) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (727985) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (727985) EXAMPLE: onoff 0x01[0m
+[0;32mI (727985) BOARD: pin: 0x19[0m
+[0;33mW (727995) BOARD: led red is already on[0m
+[0;32mI (769015) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (769015) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (769025) EXAMPLE: onoff 0x00[0m
+[0;32mI (769025) BOARD: pin: 0x19[0m
+[0;32mI (780655) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (780655) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (780655) EXAMPLE: onoff 0x01[0m
+[0;32mI (780665) BOARD: pin: 0x19[0m
+[0;32mI (788675) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (788675) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (788675) EXAMPLE: onoff 0x00[0m
+[0;32mI (788675) BOARD: pin: 0x19[0m
+[0;32mI (791735) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (791735) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (791735) EXAMPLE: onoff 0x01[0m
+[0;32mI (791745) BOARD: pin: 0x19[0m
+[0;33mW (987715) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (1035875) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1035875) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1035885) EXAMPLE: onoff 0x00[0m
+[0;32mI (1035885) BOARD: pin: 0x19[0m
+[0;32mI (1038285) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1038285) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1038295) EXAMPLE: onoff 0x01[0m
+[0;32mI (1038295) BOARD: pin: 0x19[0m
+[0;32mI (1040015) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1040015) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1040015) EXAMPLE: onoff 0x00[0m
+[0;32mI (1040015) BOARD: pin: 0x19[0m
+[0;32mI (1041355) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1041355) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1041355) EXAMPLE: onoff 0x01[0m
+[0;32mI (1041355) BOARD: pin: 0x19[0m
+[0;32mI (1043395) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1043395) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1043395) EXAMPLE: onoff 0x00[0m
+[0;32mI (1043405) BOARD: pin: 0x19[0m
+[0;32mI (1084825) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1084825) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1084825) EXAMPLE: onoff 0x01[0m
+[0;32mI (1084835) BOARD: pin: 0x19[0m
+[0;32mI (1086415) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1086425) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1086425) EXAMPLE: onoff 0x00[0m
+[0;32mI (1086425) BOARD: pin: 0x19[0m
+[0;32mI (1101795) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1101795) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1101805) EXAMPLE: onoff 0x01[0m
+[0;32mI (1101805) BOARD: pin: 0x19[0m
+[0;32mI (1104595) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1104595) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1104595) EXAMPLE: onoff 0x00[0m
+[0;32mI (1104605) BOARD: pin: 0x19[0m
+[0;32mI (1105655) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1105655) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1105655) EXAMPLE: onoff 0x01[0m
+[0;32mI (1105655) BOARD: pin: 0x19[0m
+[0;32mI (1107015) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1107015) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1107025) EXAMPLE: onoff 0x00[0m
+[0;32mI (1107025) BOARD: pin: 0x19[0m
+[0;32mI (1110915) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1110915) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1110915) EXAMPLE: onoff 0x01[0m
+[0;32mI (1110915) BOARD: pin: 0x19[0m
+[0;32mI (1112575) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1112575) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1112585) EXAMPLE: onoff 0x00[0m
+[0;32mI (1112585) BOARD: pin: 0x19[0m
+[0;32mI (1117615) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1117615) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1117615) EXAMPLE: onoff 0x01[0m
+[0;32mI (1117625) BOARD: pin: 0x19[0m
+[0;32mI (1169365) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1169375) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1169375) EXAMPLE: onoff 0x00[0m
+[0;32mI (1169375) BOARD: pin: 0x19[0m
+[0;32mI (1170875) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1170875) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1170885) EXAMPLE: onoff 0x01[0m
+[0;32mI (1170885) BOARD: pin: 0x19[0m
+[0;32mI (1172135) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1172135) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1172135) EXAMPLE: onoff 0x00[0m
+[0;32mI (1172145) BOARD: pin: 0x19[0m
+[0;32mI (1173515) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1173515) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1173515) EXAMPLE: onoff 0x01[0m
+[0;32mI (1173515) BOARD: pin: 0x19[0m
+[0;32mI (1183915) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1183915) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1183915) EXAMPLE: onoff 0x00[0m
+[0;32mI (1183925) BOARD: pin: 0x19[0m
+[0;32mI (1187425) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1187435) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1187435) EXAMPLE: onoff 0x01[0m
+[0;32mI (1187435) BOARD: pin: 0x19[0m
+[0;32mI (1199615) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1199615) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1199615) EXAMPLE: onoff 0x00[0m
+[0;32mI (1199615) BOARD: pin: 0x19[0m
+[0;32mI (1201795) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1201795) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1201805) EXAMPLE: onoff 0x01[0m
+[0;32mI (1201805) BOARD: pin: 0x19[0m
+[0;32mI (1220575) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1220575) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1220585) EXAMPLE: onoff 0x00[0m
+[0;32mI (1220585) BOARD: pin: 0x19[0m
+[0;32mI (1224855) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1224855) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1224865) EXAMPLE: onoff 0x01[0m
+[0;32mI (1224865) BOARD: pin: 0x19[0m
+[0;32mI (1238515) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1238515) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1238525) EXAMPLE: onoff 0x00[0m
+[0;32mI (1238525) BOARD: pin: 0x19[0m
+[0;32mI (1240395) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1240395) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1240405) EXAMPLE: onoff 0x01[0m
+[0;32mI (1240405) BOARD: pin: 0x19[0m
+[0;32mI (1247345) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1247345) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1247345) EXAMPLE: onoff 0x00[0m
+[0;32mI (1247345) BOARD: pin: 0x19[0m
+[0;32mI (1249295) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1249295) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1249305) EXAMPLE: onoff 0x01[0m
+[0;32mI (1249305) BOARD: pin: 0x19[0m
+[0;32mI (1298275) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1298275) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1298275) EXAMPLE: onoff 0x00[0m
+[0;32mI (1298285) BOARD: pin: 0x19[0m
+[0;32mI (1300195) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1300195) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1300205) EXAMPLE: onoff 0x01[0m
+[0;32mI (1300205) BOARD: pin: 0x19[0m
+[0;32mI (1319095) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1319095) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1319105) EXAMPLE: onoff 0x00[0m
+[0;32mI (1319105) BOARD: pin: 0x19[0m
+[0;32mI (1321015) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1321015) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1321015) EXAMPLE: onoff 0x01[0m
+[0;32mI (1321015) BOARD: pin: 0x19[0m
+[0;32mI (1323695) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1323695) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1323705) EXAMPLE: onoff 0x00[0m
+[0;32mI (1323705) BOARD: pin: 0x19[0m
+[0;32mI (1328555) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1328555) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1328565) EXAMPLE: onoff 0x01[0m
+[0;32mI (1328565) BOARD: pin: 0x19[0m
+[0;32mI (1348055) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1348055) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1348055) EXAMPLE: onoff 0x00[0m
+[0;32mI (1348065) BOARD: pin: 0x19[0m
+[0;32mI (1470725) EXAMPLE: event 0x00, opcode 0x8203, src 0x0001, dst 0x000c[0m
+[0;32mI (1470725) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1470725) EXAMPLE: onoff 0x01[0m
+[0;32mI (1470735) EXAMPLE: count: 0x03, addr: 0x000c, check: 0x000c[0m
+[0;32mI (1470735) BOARD: pin: 0x19[0m
+[0;32mI (1470745) EXAMPLE: count: 0x03, addr: 0x000c, check: 0x000c[0m
+[0;32mI (1470745) EXAMPLE: count: 0x03, addr: 0x000c, check: 0x000c[0m
+[0;32mI (1475555) EXAMPLE: event 0x00, opcode 0x8203, src 0x0001, dst 0x000c[0m
+[0;32mI (1475555) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1475555) EXAMPLE: onoff 0x00[0m
+[0;32mI (1475565) EXAMPLE: count: 0x03, addr: 0x000c, check: 0x000c[0m
+[0;32mI (1475575) BOARD: pin: 0x19[0m
+[0;32mI (1475575) EXAMPLE: count: 0x03, addr: 0x000c, check: 0x000c[0m
+[0;32mI (1475585) EXAMPLE: count: 0x03, addr: 0x000c, check: 0x000c[0m
+[0;32mI (1663615) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1663615) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1663625) EXAMPLE: onoff 0x01[0m
+[0;32mI (1663625) BOARD: pin: 0x19[0m
+[0;32mI (1706355) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1706355) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1706365) EXAMPLE: onoff 0x00[0m
+[0;32mI (1706365) BOARD: pin: 0x19[0m
+[0;32mI (1938915) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (1938915) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (1938915) EXAMPLE: onoff 0x01[0m
+[0;32mI (1938915) BOARD: pin: 0x19[0m
+[0;32mI (2743265) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (2743265) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (2743275) EXAMPLE: onoff 0x00[0m
+[0;32mI (2743275) BOARD: pin: 0x19[0m
+[0;32mI (2744675) EXAMPLE: event 0x00, opcode 0x8203, src 0x000b, dst 0xffff[0m
+[0;32mI (2744675) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (2744675) EXAMPLE: onoff 0x01[0m
+[0;32mI (2744685) BOARD: pin: 0x19[0m
+[0;32mI (3105755) EXAMPLE: event 0x00, opcode 0x8203, src 0x0015, dst 0xffff[0m
+[0;32mI (3105755) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (3105755) EXAMPLE: onoff 0x00[0m
+[0;32mI (3105765) BOARD: pin: 0x19[0m
+[0;32mI (3107735) EXAMPLE: event 0x00, opcode 0x8203, src 0x0015, dst 0xffff[0m
+[0;32mI (3107735) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (3107735) EXAMPLE: onoff 0x01[0m
+[0;32mI (3107745) BOARD: pin: 0x19[0m
+[0;32mI (3109895) EXAMPLE: event 0x00, opcode 0x8203, src 0x0015, dst 0xffff[0m
+[0;32mI (3109895) EXAMPLE: ESP_BLE_MESH_GENERIC_SERVER_STATE_CHANGE_EVT[0m
+[0;32mI (3109895) EXAMPLE: onoff 0x00[0m
+[0;32mI (3109895) BOARD: pin: 0x19[0m
